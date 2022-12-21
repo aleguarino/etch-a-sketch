@@ -42,10 +42,11 @@ body {
     height: 600px;
     display: grid;
     background-color: #fff;
+    box-shadow: 0 0 10px #1C1A1A;
 }
 
 .grid>div {
-    border: 1;
+    border: 0;
 }
 
 .controls {
