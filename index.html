@@ -5,25 +5,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ETCH A SKECTCH</title>
+    <link rel="icon" type="image/x-icon" href="/img/pencil.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="huebee.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/huebee.min.css">
 </head>
 
 <body>
+    <div class="header">
+        <img src="img/pencil.png" width="50px" />
+        <h2>Etch a Sketch</h2>
+    </div>
     <div class="main">
         <div class="grid">
 
         </div>
         <div class="controls">
-            <input class="color-input" value="#F80" data-huebee />
-            <input class="input-range" value="16" type="range" min="1" max="50" /><span class="grid-size"></span>
-            <button onclick="clearGrid()">CLEAR</button>
+            <div class="pencil-control">
+                <span>Canvas color</span>
+                <input class="canvas-input control" value="#FFF" data-huebee />
+            </div>
+            <div class="pencil-control">
+                <span>Pencil color</span>
+                <input class="color-input control" value="#F80" data-huebee />
+            </div>
+            <input class="input-range" value="16" type="range" min="1" max="100" /><span class="grid-size"></span>
+            <button class="btn" onclick="clearGrid()">CLEAR</button>
         </div>
     </div>
-    <script src="huebee.pkgd.min.js"></script>
-    <script src="script.js"></script>
+    <div class="footer">
+        <p>Copyright © 2022 aleguarino
+            <a href="https://github.com/aleguarino" target="_blank">
+                <img src="img/github.png" width="16px" />
+            </a>
+        </p>
+    </div>
+    <script src="js/huebee.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
