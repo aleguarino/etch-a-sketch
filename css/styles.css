@@ -55,7 +55,10 @@ body {
     flex-direction: column;
     font-size: 22px;
     color: #fff;
+    height: 600px;
     width: 200px;
+    justify-content: center;
+    gap: 8px;
 }
 
 .pencil-control {
@@ -79,7 +82,23 @@ input[type="range"] {
 }
 
 .btn {
+    font-size: 15px;
     color: white;
-    background-color: rgb(59, 48, 48);
+    background-color: #292525;
     font-family: 'Unbounded', serif;
+    border: 1px solid white;
+}
+
+.pressed-btn {
+    color: white;
+    background-color: #050404;
+    font-family: 'Unbounded', serif;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.git-ico:hover {
+    transform: scale(1.2);
 }
